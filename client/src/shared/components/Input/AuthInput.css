@@ -1,0 +1,11 @@
+.auth-input {
+	padding: 15px 15px;
+	outline: none;
+	border-radius: 2rem;
+	border: none;
+	color: #334554;
+	margin: 0.3rem 0rem;
+	font-size: large;
+	background-color: #d8d2b9;
+	width: 300px;
+}

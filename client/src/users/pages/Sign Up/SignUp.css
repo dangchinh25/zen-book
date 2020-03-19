@@ -1,0 +1,28 @@
+.signup {
+	text-align: center;
+}
+
+.signup form {
+	height: 65vh;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup form a {
+	transition: 0.2ms all ease;
+}
+
+.signup form a:hover {
+	color: #52756b;
+}
+
+.signup .switch-auth {
+	color: #a7885d;
+}
+
+.signup .title {
+	color: #a7885d;
+	margin-bottom: 15px;
+}

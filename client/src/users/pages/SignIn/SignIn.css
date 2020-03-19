@@ -1,0 +1,28 @@
+.signin {
+	text-align: center;
+}
+
+.signin form {
+	height: 65vh;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.signin form a {
+	transition: 0.2ms all ease;
+}
+
+.signin form a:hover {
+	color: #52756b;
+}
+
+.signin .switch-auth {
+	color: #a7885d;
+}
+
+.signin .title {
+	color: #a7885d;
+	margin-bottom: 15px;
+}

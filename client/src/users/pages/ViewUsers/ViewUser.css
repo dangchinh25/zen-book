@@ -1,0 +1,7 @@
+.view-user {
+	height: 65vh;
+	margin: 0px 100px;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+}

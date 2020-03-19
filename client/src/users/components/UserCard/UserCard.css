@@ -1,0 +1,28 @@
+.user-card {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #d8d2b9;
+	width: 180px;
+	height: 220px;
+	border-radius: 1.5rem;
+
+	margin: 15px 15px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.user-card:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.user-card .avatar {
+	clip-path: circle(50% at 50% 50%);
+}
+
+.user-card h3 {
+	margin: 5px 0px;
+	color: #334554;
+	font-weight: 500;
+}

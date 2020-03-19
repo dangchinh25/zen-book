@@ -1,0 +1,38 @@
+li,
+a,
+button {
+	color: #d8d2b9;
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 15px 7%;
+}
+
+.logo {
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.nav-link {
+	list-style: none;
+}
+
+.nav-link li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav-link li a {
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.nav-link li a:hover {
+	color: #a7885d;
+}
