@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import AuthInput from "../../../shared/components/Input/AuthInput"
 import AuthButton from "../../../shared/components/Button/AuthButton"
 import { AuthContext } from "../../../shared/context/auth-context"
+import ImageUpload from "../../../shared/components/ImageUpload/ImageUpload"
 
 function SignUp() {
 	const [signupData, setSignUpData] = useState({
@@ -42,6 +43,7 @@ function SignUp() {
 					type="text"
 					onChange={onChange("username")}
 				/>
+				<ImageUpload id="image" />
 				<AuthInput
 					placeholder={"Email address"}
 					type="email"
