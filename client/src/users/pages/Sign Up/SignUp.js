@@ -11,7 +11,11 @@ function SignUp() {
 		fullname: "",
 		username: "",
 		email: "",
-		password: ""
+		password: "",
+		image: {
+			value: null,
+			isValid: false
+		}
 	})
 
 	const auth = useContext(AuthContext)
@@ -25,6 +29,16 @@ function SignUp() {
 		setSignUpData({
 			...signupData,
 			[input]: e.target.value
+		})
+	}
+
+	const onImageUpload = (value, isValid) => {
+		setSignUpData({
+			...signupData,
+			image: {
+				value: value,
+				isValid: isValid
+			}
 		})
 	}
 
@@ -43,7 +57,7 @@ function SignUp() {
 					type="text"
 					onChange={onChange("username")}
 				/>
-				<ImageUpload id="image" />
+				<ImageUpload id="image" onInput={onImageUpload} />
 				<AuthInput
 					placeholder={"Email address"}
 					type="email"
