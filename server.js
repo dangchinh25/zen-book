@@ -2,6 +2,7 @@ const express = require("express")
 const cors = require("cors")
 const jwt = require("jsonwebtoken")
 const mongoose = require("mongoose")
+const path = require("path")
 
 //routes
 const userRoutes = require("./routes/users-routes")
@@ -10,6 +11,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 require("dotenv").config()
+app.use("/uploads", express.static(path.join("uploads")))
 
 const PORT = process.env.PORT || 5000
 

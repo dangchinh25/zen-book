@@ -39,7 +39,8 @@ const signup = async (req, res, next) => {
 		fullname,
 		username,
 		email,
-		password
+		password,
+		image: req.file.path
 	})
 
 	try {
@@ -50,7 +51,7 @@ const signup = async (req, res, next) => {
 		return next(error)
 	}
 
-	res.status(201).json({ user: newUser })
+	res.status(201).json({ msg: "Authenticated", user: newUser })
 }
 
 const signin = async (req, res, next) => {

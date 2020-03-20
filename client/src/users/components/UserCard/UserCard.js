@@ -5,11 +5,11 @@ function UserCard({ fullName, username, avatarUrl }) {
 	return (
 		<div className="user-card">
 			<div className="avatar">
-				<img src={avatarUrl} />
+				<img src={`http://localhost:5000/${avatarUrl}`} />
 			</div>
 
 			<h3>{fullName}</h3>
-			<h3>{username}</h3>
+			<h3>{`@${username}`}</h3>
 		</div>
 	)
 }

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react"
 import "./SignUp.css"
 import { Link } from "react-router-dom"
+import axios from "axios"
 import AuthInput from "../../../shared/components/Input/AuthInput"
 import AuthButton from "../../../shared/components/Button/AuthButton"
 import { AuthContext } from "../../../shared/context/auth-context"
@@ -22,7 +23,24 @@ function SignUp() {
 
 	const signUpSubtmit = e => {
 		e.preventDefault()
-		auth.signin()
+
+		try {
+			const formData = new FormData()
+			formData.append("fullname", signupData.fullname)
+			formData.append("username", signupData.username)
+			formData.append("email", signupData.email)
+			formData.append("password", signupData.password)
+			formData.append("image", signupData.image.value)
+
+			const respons = axios.post(
+				"http://localhost:5000/users/signup",
+				formData,
+				{ headers: { "content-type": "multipart/form-data" } }
+			)
+			auth.signin()
+		} catch (err) {
+			console.log(err)
+		}
 	}
 
 	const onChange = input => e => {
