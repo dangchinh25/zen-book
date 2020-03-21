@@ -1,0 +1,11 @@
+.new-review {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65vh;
+}
+
+.new-review .text {
+	display: flex;
+	flex-direction: column;
+}

@@ -6,6 +6,8 @@ import SignIn from "./users/pages/SignIn/SignIn"
 import SignUp from "./users/pages/Sign Up/SignUp"
 import ViewUser from "./users/pages/ViewUsers/ViewUser"
 import { AuthContext } from "./shared/context/auth-context"
+import NewReview from "./books/pages/NewReview/NewReview"
+import AllReview from "./books/pages/AllReview/AllReview"
 
 function App() {
 	const [isSignedIn, setIsSignedIn] = useState(false)
@@ -29,9 +31,11 @@ function App() {
 			<Router>
 				<div className="App">
 					<NavigationBar />
+					<Route exact path="/" component={AllReview} />
 					<Route path="/signin" component={SignIn} />
 					<Route path="/signup" component={SignUp} />
 					<Route path="/viewuser" component={ViewUser} />
+					<Route path="/newreview" component={NewReview} />
 				</div>
 			</Router>
 		</AuthContext.Provider>

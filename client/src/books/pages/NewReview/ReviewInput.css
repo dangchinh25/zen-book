@@ -1,0 +1,21 @@
+.review-input {
+	padding: 10px 10px;
+	outline: none;
+	border-radius: 8px;
+	border: none;
+	margin: 7px 15px;
+	width: 250px;
+	font-size: large;
+	background-color: #d8d2b9;
+}
+
+.review-textarea {
+	padding: 10px 10px;
+	outline: none;
+	border-radius: 8px;
+	border: none;
+	margin: 7px 15px;
+	width: 250px;
+	font-size: large;
+	background-color: #d8d2b9;
+}
